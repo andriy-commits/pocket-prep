@@ -1,0 +1,27 @@
+{
+  "apiVersion": 3,
+  "name": "groundwrk/section",
+  "title": "Groundwrk Section",
+  "category": "design",
+  "icon": "align-wide",
+  "description": "Flexible content section with eyebrow, heading, body and CTA.",
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true,
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "eyebrow": { "type": "string", "source": "html", "selector": ".gw-section__eyebrow", "default": "Optional label" },
+    "heading": { "type": "string", "source": "html", "selector": "h2", "default": "Section heading" },
+    "text": { "type": "string", "source": "html", "selector": "p", "default": "Describe this section." },
+    "buttonText": { "type": "string", "default": "Read more" },
+    "buttonUrl": { "type": "string", "default": "" }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css"
+}

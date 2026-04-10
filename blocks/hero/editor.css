@@ -1,0 +1,18 @@
+.gw-hero__inner {
+  display: flex;
+  gap: 20px;
+}
+
+.gw-hero__right img {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .gw-hero__inner {
+    flex-direction: column;
+  }
+
+  .gw-hero__right {
+    max-width: 100%;
+  }
+}

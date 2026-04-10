@@ -1,0 +1,24 @@
+body.block-editor-page {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.editor-styles-wrapper {
+  color: #111111;
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"],
+.editor-styles-wrapper .wp-block.alignwide {
+  max-width: 1920px;
+}
+
+.editor-styles-wrapper .wp-block {
+  max-width: 1500px;
+}
+
+.editor-styles-wrapper .wp-block[data-type="groundwrk/hero"] h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.98;
+}
+.editor-styles-wrapper .max-width-text{
+  max-width: 233px !important;
+}

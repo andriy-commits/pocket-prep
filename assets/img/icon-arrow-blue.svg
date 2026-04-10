@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="11px" viewBox="0 0 10 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Link/external-01-normal" transform="translate(-177.000000, -5.000000)" fill="#1671FF" fill-rule="nonzero">
+            <g id="icons/navigational/arrow" transform="translate(175.500000, 5.500000)">
+                <g transform="translate(6.500000, 5.000000) rotate(-45.000000) translate(-6.500000, -5.000000) ">
+                    <path d="M6.838017,0.292893219 C7.23113546,-0.0976310729 7.86850642,-0.0976310729 8.26162489,0.292893219 L8.26162489,0.292893219 L13,5 L8.26162489,9.70710678 C7.86850642,10.0976311 7.23113546,10.0976311 6.838017,9.70710678 C6.44489853,9.31658249 6.44489853,8.68341751 6.838017,8.29289322 L6.838017,8.29289322 L9.145,6 L1.00664279,6 C0.490400291,6 0.0649212518,5.61395981 0.00677242225,5.11662113 L0,5 C0,4.44771525 0.45068933,4 1.00664279,4 L1.00664279,4 L9.146,4 L6.838017,1.70710678 C6.47513842,1.34662282 6.44722468,0.779391764 6.75427579,0.387100557 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

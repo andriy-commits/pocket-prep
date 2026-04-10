@@ -1,0 +1,31 @@
+/* HERO */
+
+.gw-hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.gw-hero__left {
+  max-width: 600px;
+}
+
+.gw-hero__right {
+  max-width: 500px;
+}
+
+.gw-hero__right img {
+  width: 100%;
+  height: auto;
+}
+
+/* Banner */
+
+.exam__banner-bundle {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+}

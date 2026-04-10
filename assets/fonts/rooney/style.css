@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Rooney Pro';
+    src: local('Rooney Pro Medium'), local('Rooney-Pro-Medium'),
+        url('RooneyPro-Medium.woff2') format('woff2'),
+        url('RooneyPro-Medium.woff') format('woff'),
+        url('RooneyPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

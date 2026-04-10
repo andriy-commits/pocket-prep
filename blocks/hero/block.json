@@ -1,0 +1,32 @@
+{
+  "apiVersion": 3,
+  "name": "groundwrk/hero",
+  "title": "Groundwrk Hero",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "Editable hero section with inline text editing.",
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true,
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "bannerText": { "type": "string", "default": "EMS Pocket Prep" },
+    "bannerUrl": { "type": "string", "default": "" },
+
+    "heading": { "type": "string", "source": "html", "selector": "h1", "default": "Build something great 1" },
+    "text": { "type": "string", "source": "html", "selector": "p", "default": "Describe the section here." },
+
+    "buttonText": { "type": "string", "default": "Learn more" },
+    "buttonUrl": { "type": "string", "default": "" },
+
+    "imageUrl": { "type": "string", "default": "" }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css"
+}

@@ -1,0 +1,64 @@
+.exam__subjects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.exam__subject {
+    background: #fff;
+    padding: 23px 12px 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    margin-bottom: -10px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.exam__subject-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    align-items: center;
+}
+.exam__subject-top div:first-child{
+    font-size: 14px;
+}
+.exam__subject-top div:nth-child(2){
+    font-size: 23px;
+    letter-spacing: .69px;
+    line-height: 13px;
+    color: #1f3545;
+    margin-left: 2px;
+}
+.exam__subject-correct {
+    font-size: 12px;
+    line-height: 16px;
+    color: #475967;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-top:auto;
+}
+
+.exam__subject-bar {
+    height: 6px;
+    background: #eee;
+}
+
+.exam__subject-bar-inner {
+    height: 6px;
+}
+
+.exam__subject-bar-inner-green {
+    background: #22c55e;
+}
+
+.exam__subject-bar-inner-yellow {
+    background: #ffbd47;
+}
+
+.exam__subject-bar-inner-red {
+    background: #ff4747;
+}
+

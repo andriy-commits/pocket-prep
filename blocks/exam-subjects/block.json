@@ -1,0 +1,28 @@
+{
+  "apiVersion": 2,
+  "name": "groundwrk/exam-subjects",
+  "title": "Exam Subjects",
+  "category": "widgets",
+  "icon": "chart-bar",
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Primary Assessment"
+    },
+    "percent": {
+      "type": "string",
+      "default": "75"
+    },
+    "correct": {
+      "type": "string",
+      "default": "12 of 16 Correct"
+    },
+    "color": {
+      "type": "string",
+      "default": "green"
+    }
+  }
+}

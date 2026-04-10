@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #2457ff;
+  --color-primary-hover: #1e4be0;
+
+  --color-border: #d9dce3;
+  --color-muted: #f5f6f8;
+
+  --color-white: #ffffff;
+  --color-black: #111111;
+
+  --header-bg: #ffffff;
+  --header-shadow: rgba(0, 0, 0, 0.08);
+
+  --color-text-secondary: #475967;
+
+
+}
+
+/* SCSS BREAKPOINTS */
+
+$bp-desktop: 1440px;
+$bp-laptop: 1200px;
+$bp-tablet: 1024px;
+$bp-mobile: 768px;
+$bp-small: 480px;
+$bp-xs: 375px;
