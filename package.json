@@ -1,0 +1,21 @@
+{
+  "name": "groundwrk-theme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build blocks/*/index.js",
+    "start": "wp-scripts start blocks/*/index.js",
+    "scss": "sass assets/scss/main.scss assets/css/main.css --watch",
+    "scss:editor": "sass assets/scss/editor.scss assets/css/editor.css --watch"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "not dead",
+    "> 0.5%"
+  ],
+  "devDependencies": {
+    "@wordpress/base-styles": "^6.19.0",
+    "@wordpress/scripts": "^30.0.0",
+    "sass": "^1.99.0"
+  }
+}

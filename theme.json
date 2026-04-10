@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "1500px",
+      "wideSize": "1920px"
+    },
+    "spacing": {
+      "units": ["px", "rem", "em", "%", "vw", "vh"],
+      "padding": true,
+      "margin": true,
+      "blockGap": true
+    },
+    "color": {
+      "palette": [
+        { "name": "Black", "slug": "black", "color": "#111111" },
+        { "name": "White", "slug": "white", "color": "#ffffff" },
+        { "name": "Accent", "slug": "accent", "color": "#2457ff" },
+        { "name": "Muted", "slug": "muted", "color": "#f5f6f8" },
+        { "name": "Border", "slug": "border", "color": "#d9dce3" },
+        { "name": "Blue", "slug": "blue", "color": "#0069FF" },
+        { "name": "Red", "slug": "red", "color": "#d00" }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "lineHeight": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "name": "Inter",
+          "slug": "inter"
+        }
+      ],
+      "fontSizes": [
+        { "name": "Small", "slug": "small", "size": "0.875rem" },
+        { "name": "Base", "slug": "base", "size": "1rem" },
+        { "name": "Large", "slug": "large", "size": "1.25rem" },
+        { "name": "XL", "slug": "xl", "size": "2.5rem" },
+        { "name": "Display", "slug": "display", "size": "clamp(3rem, 6vw, 5rem)" }
+      ]
+    }
+  },
+  "styles": {
+    "spacing": {
+      "blockGap": "1.5rem"
+    },
+    "color": {
+      "background": "#ffffff",
+      "text": "#111111"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--inter)",
+      "fontSize": "var(--wp--preset--font-size--base)",
+      "lineHeight": "1.55"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "lineHeight": "1.05"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--accent)"
+        },
+        ":hover": {
+          "color": {
+            "text": "#153cc9"
+          }
+        }
+      },
+      "button": {
+        "border": {
+          "radius": "999px"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.9rem",
+            "right": "1.4rem",
+            "bottom": "0.9rem",
+            "left": "1.4rem"
+          }
+        }
+      }
+    }
+  }
+}

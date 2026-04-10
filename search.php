@@ -1,0 +1,25 @@
+<?php
+get_header();
+?>
+<div class="container content-area">
+    <header class="archive-header">
+        <h1 class="archive-title">
+            <?php printf(esc_html__('Search results for: %s', 'groundwrk'), '<span>' . esc_html(get_search_query()) . '</span>'); ?>
+        </h1>
+    </header>
+
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class('entry-card'); ?>>
+                <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <div class="entry-summary"><?php the_excerpt(); ?></div>
+            </article>
+        <?php endwhile; ?>
+        <?php the_posts_pagination(); ?>
+    <?php else : ?>
+        <p><?php esc_html_e('No results found.', 'groundwrk'); ?></p>
+        <?php get_search_form(); ?>
+    <?php endif; ?>
+</div>
+<?php
+get_footer();
