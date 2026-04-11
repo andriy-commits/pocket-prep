@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="7px" viewBox="0 0 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer/desktop" transform="translate(-1255.000000, -112.000000)" fill="#DFE3E7" fill-rule="nonzero">
+            <g id="content" transform="translate(235.000000, 62.000000)">
+                <g id="resources" transform="translate(944.000000, 7.000000)">
+                    <g id="link/external-arrow" transform="translate(73.173414, 40.500000)">
+                        <g id="Group" transform="translate(2.826586, 2.500000)">
+                            <g id="icons/navigational/arrow" transform="translate(3.292893, 3.707107) rotate(-45.000000) translate(-3.292893, -3.707107) translate(-1.707107, -0.292893)">
+                                <path d="M6.36518341,0.72065518 L6.4344313,0.778510631 L9.78798469,4.13206402 L6.4344313,7.48561741 C6.23916915,7.68087956 5.92258666,7.68087956 5.72732452,7.48561741 C5.55375817,7.31205106 5.53447302,7.04262666 5.66946907,6.84775852 L5.72732452,6.77851063 L7.87187791,4.63206402 L1.20587791,4.63206402 C0.929735534,4.63206402 0.705877909,4.4082064 0.705877909,4.13206402 C0.705877909,3.88660413 0.88275307,3.68245565 1.11600228,3.64011969 L1.20587791,3.63206402 L7.87387791,3.63206402 L5.72732452,1.48561741 C5.55375817,1.31205106 5.53447302,1.04262666 5.66946907,0.847758518 L5.72732452,0.778510631 C5.90089087,0.604944279 6.17031527,0.585659129 6.36518341,0.72065518 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

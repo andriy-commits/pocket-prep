@@ -1,0 +1,15 @@
+{
+  "apiVersion": 3,
+  "name": "groundwrk/exam-card",
+  "title": "Exam Card",
+  "category": "widgets",
+  "icon": "index-card",
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./style.css",
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "longname": { "type": "string", "default": "" },
+    "url": { "type": "string", "default": "" }
+  }
+}

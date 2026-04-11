@@ -5,22 +5,13 @@ if (!defined('ABSPATH')) {
 ?>
 </main>
 <footer class="site-footer">
-    <div class="container-wide site-footer__inner">
-        <div>
-            <strong><?php bloginfo('name'); ?></strong>
-            <p><?php echo esc_html(get_bloginfo('description')); ?></p>
-        </div>
-        <nav class="footer-nav" aria-label="<?php esc_attr_e('Footer navigation', 'groundwrk'); ?>">
-            <?php
-            wp_nav_menu([
-                'theme_location' => 'footer',
-                'menu_class'     => 'footer-nav__menu',
-                'container'      => false,
-                'fallback_cb'    => false,
-            ]);
-            ?>
-        </nav>
-    </div>
+    <?php
+    $footer = get_page_by_path('footer');
+
+    if ($footer) {
+        echo apply_filters('the_content', $footer->post_content);
+    }
+    ?>
 </footer>
 <?php wp_footer(); ?>
 </body>

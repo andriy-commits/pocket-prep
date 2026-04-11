@@ -1,0 +1,59 @@
+
+.exam__bundle-exam {
+    cursor: pointer;
+    display: block;
+    padding: 10px 5px 12px 11px;
+    width: 333px;
+    box-sizing: border-box;
+    margin: 5px 5px 0 0 !important;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+
+/* hover */
+.exam__bundle-exam:hover {
+    box-shadow: 0 2px 6px 0 rgba(15, 29, 40, .15);
+    border-radius: 2px;
+    border-color: #fff;
+    background: #fff;
+}
+
+/* цвет */
+.exam__bundle-exam.exam__bundle-exam-red {
+    border-bottom: 1px solid rgba(255, 99, 99, .3);
+    @media (max-width: 767px){
+        border-bottom: 0 !important;
+        width: 100%;
+        max-width: 340px !important;
+        margin: 0 auto 10px !important;
+        box-shadow: 0 2px 6px 0 rgba(15, 29, 40, .15);
+        border-radius: 2px;
+    }
+}
+
+/* title */
+.exam__bundle-exam-title {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: .53px;
+    color: #1f3545;
+    margin-bottom: 3px;
+}
+
+/* hover title */
+.exam__bundle-exam:hover .exam__bundle-exam-title {
+    color: #0064ff;
+}
+
+/* description */
+.exam__bundle-exam-longname {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    color: #475967;
+    max-width: 319px;
+}

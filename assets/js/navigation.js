@@ -77,3 +77,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+
+
+window.addEventListener('load', () => {
+  document.addEventListener('click', function (e) {
+    const toggle = e.target.closest('.exam__bundle-toggle');
+    if (!toggle) return;
+
+    const wrapper = toggle.closest('.bundle-container'); // ✅ FIX
+
+    const right = wrapper?.querySelector('.exam__bundle-right');
+
+    toggle.classList.toggle('show');
+    right?.classList.toggle('show');
+  });
+});
