@@ -39,6 +39,7 @@ function groundwrk_theme_setup(): void
         'primary' => __('Primary Menu', 'groundwrk'),
         'header_cta' => __('Header CTA', 'groundwrk'),
         'footer'  => __('Footer Menu', 'groundwrk'),
+        'mobile-menu' => __('Mobile Menu', 'groundwrk')
     ]);
 
     add_editor_style('assets/css/editor.css');
@@ -75,3 +76,16 @@ function allow_svg_uploads($mimes) {
     return $mimes;
 }
 add_filter('upload_mimes', 'allow_svg_uploads');
+
+
+function register_modals_cpt() {
+    register_post_type('modals', [
+        'label' => 'Modals',
+        'public' => false,
+        'show_ui' => true,
+        'menu_icon' => 'dashicons-welcome-view-site',
+        'supports' => ['title', 'editor'],
+        'show_in_rest' => true,
+    ]);
+}
+add_action('init', 'register_modals_cpt');

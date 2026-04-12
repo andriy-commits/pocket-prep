@@ -260,7 +260,7 @@
   font-weight: 500;
 
   @media (max-width: 767px){
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
@@ -302,13 +302,16 @@ flex:0 0 44% !important;
     li{
       a {
         color: #dfe3e7;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 34px;
         width: 100%;
         font-weight: 400;
         //width: 132px;
         display: block;
         outline: none;
+        @media (max-width: 767px){
+          font-size: 16px;
+        }
 
         &:hover,
         &:focus {
@@ -366,14 +369,16 @@ flex:0 0 44% !important;
     li{
       a {
         color: #dfe3e7;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 34px;
         width: 100%;
         font-weight: 400;
         //width: 132px;
         display: block;
         outline: none;
-
+        @media (max-width: 767px){
+          font-size: 16px;
+        }
         &:hover,
         &:focus {
           color: $banana-bread;
@@ -428,14 +433,16 @@ flex:0 0 44% !important;
     li{
       a {
         color: #dfe3e7;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 34px;
         width: 100%;
         font-weight: 400;
         //width: 132px;
         display: block;
         outline: none;
-
+        @media (max-width: 767px){
+          font-size: 16px;
+        }
         &:hover,
         &:focus {
           color: $banana-bread;
@@ -458,7 +465,7 @@ flex:0 0 44% !important;
             &::before {
               content: '';
               left: -8px;
-              top: -1px;
+              top: -4px;
               width: calc(100% + 18px);
               height: 25px;
               border: 1px solid $banana-bread;
@@ -516,4 +523,20 @@ flex:0 0 44% !important;
   @media (max-width: 767px){
     flex-direction: column-reverse;
   }
+}
+
+.wp-block-navigation__container > li:first-child > a {
+  position: relative;
+}
+
+.wp-block-navigation__container > li:first-child > a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  background: url('../img/icon-arrow-gray.svg') no-repeat center;
+  background-size: contain;
 }

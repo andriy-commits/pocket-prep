@@ -125,6 +125,7 @@
   }
   @media (max-width: 767px){
     padding-top:45px;
+    margin-right: auto !important;
   }
 }
 
@@ -433,6 +434,9 @@ font-family: 'Rooney Pro', sans-serif;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
+  @media (max-width: 767px){
+    top:-25px;
+  }
 
   &:before {
     content: '';
@@ -723,7 +727,7 @@ font-family: 'Rooney Pro', sans-serif;
 
     @media (max-width: 1279px){
       margin: 0 auto;
-      max-width: 430px;
+      max-width: 340px;
     }
 
 @media (max-width: 767px){
@@ -746,7 +750,7 @@ font-family: 'Rooney Pro', sans-serif;
         z-index: -1;
 
         @media (max-width: 767px){
-          width: 166px;
+          width: 156px;
         }
       }
 
@@ -837,7 +841,7 @@ font-family: 'Rooney Pro', sans-serif;
     .pricing__disclaimer {
       max-width: 382px;
       margin: 0 !important;
-
+      padding-bottom: 37px;
       @media (max-width: 1279px){
         display: none;
       }
@@ -856,6 +860,7 @@ font-family: 'Rooney Pro', sans-serif;
       padding-top: 50px;
      padding-left: 15px;
      padding-right: 15px;
+     padding-bottom: 37px;
     }
 
     .pricing__right-inner {
@@ -879,7 +884,7 @@ font-family: 'Rooney Pro', sans-serif;
       @media (max-width: 1279px){
         border: 0;
         margin: 0 0 50px;
-        max-width: 450px;
+        max-width: 340px;
         padding:0 15px;
       }
 
@@ -960,4 +965,10 @@ font-family: 'Rooney Pro', sans-serif;
 .exam__links-title{
   max-width: 510px;
   margin: 31px auto 48px;
+}
+
+.exam__links{
+  @media (max-width: 767px){
+    display: none;
+  }
 }

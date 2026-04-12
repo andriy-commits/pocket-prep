@@ -38,46 +38,54 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
 
-  const modal = document.getElementById('questionBankModal');
-  const closeBtn = modal.querySelector('.modal__close');
-  const openBtn = document.getElementById('openModal');
-
-  if (!modal || !closeBtn || !openBtn) return;
-
   // открыть
-  openBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    modal.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
+  document.querySelectorAll('[data-modal]').forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const id = button.getAttribute('data-modal');
+      const modal = document.getElementById(id);
+
+      if (!modal) return;
+
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
   });
 
-  // закрыть по крестику
-  closeBtn.addEventListener('click', function () {
-    modal.classList.remove('is-open');
-    document.body.style.overflow = '';
-  });
+  // закрытие (крестик)
+  document.querySelectorAll('.modal__close').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const modal = btn.closest('.modal-container');
 
-  // закрыть по клику вне
-  modal.addEventListener('click', function (e) {
-    if (e.target === modal) {
-      modal.classList.remove('is-open');
+      modal.style.display = 'none';
       document.body.style.overflow = '';
-    }
+    });
   });
 
-  // закрыть по ESC
+  // клик вне окна
+  document.querySelectorAll('.modal-container').forEach(container => {
+    container.addEventListener('click', function (e) {
+      if (e.target === container) {
+        container.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  });
+
+  // ESC
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
-      modal.classList.remove('is-open');
+      document.querySelectorAll('.modal-container').forEach(modal => {
+        modal.style.display = 'none';
+      });
       document.body.style.overflow = '';
     }
   });
 
 });
-
 
 window.addEventListener('load', () => {
   document.addEventListener('click', function (e) {
@@ -91,4 +99,21 @@ window.addEventListener('load', () => {
     toggle.classList.toggle('show');
     right?.classList.toggle('show');
   });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('.mobile-navigation .menu-item-has-children > a')
+      .forEach(link => {
+
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const parent = link.parentElement;
+
+          parent.classList.toggle('active');
+        });
+
+      });
+
 });

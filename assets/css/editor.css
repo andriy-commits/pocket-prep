@@ -22,3 +22,16 @@ body.block-editor-page {
 .editor-styles-wrapper .max-width-text{
   max-width: 233px !important;
 }
+
+.editor-styles-wrapper .foot-inner__tagline-subtext{
+  max-width: 340px !important;
+}
+.editor-styles-wrapper .build-container{
+  padding-left: 15px;
+}
+.editor-styles-wrapper .info-row-container{
+  padding-left: 15px;
+}
+.editor-styles-wrapper .pricing__left{
+  padding-left: 15px;
+}
