@@ -277,7 +277,18 @@
   flex-direction: column;
   gap: 20px;
   overflow: hidden;
+  admin-bar & {
+    top: calc(70px + 32px);
+    height: calc(100vh - 116px - 32px);
+  }
 
+  /* mobile admin bar выше */
+  @media (max-width: 782px) {
+    .admin-bar & {
+      top: calc(70px + 46px);
+      height: calc(100vh - 116px - 46px);
+    }
+  }
   &.active {
     display: flex;
   }

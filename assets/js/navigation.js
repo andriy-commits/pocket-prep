@@ -117,3 +117,14 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const el = document.querySelector('.left-image-hero');
+
+  if (!el) return;
+
+  setTimeout(() => {
+    el.classList.add('is-visible');
+  }, 300);
+});

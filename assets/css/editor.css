@@ -35,3 +35,24 @@ body.block-editor-page {
 .editor-styles-wrapper .pricing__left{
   padding-left: 15px;
 }
+.editor-styles-wrapper .question-demo-block {
+  height: 700px;
+  max-width: 340px !important;
+  border: 21px solid #29D6A7;
+  border-radius: 43px;
+  overflow: hidden;
+  position: relative;
+}
+
+.editor-styles-wrapper .question-demo-block::before{
+  content: '';
+  position: absolute;
+  width: 228px;
+  height: 25px;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  background: #29D6A7;
+  border-radius: 0px 0px 20px 20px;
+
+}

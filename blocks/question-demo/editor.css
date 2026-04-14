@@ -1,0 +1,15 @@
+.question-demo-block {
+    border: 1px dashed #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.question-demo-block iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 10px;
+    pointer-events: none; /* чтобы не кликалось в редакторе */
+}

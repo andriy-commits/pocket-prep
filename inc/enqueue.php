@@ -21,5 +21,13 @@ function groundwrk_enqueue_assets(): void
         $version,
         true
     );
+
+    wp_enqueue_script(
+        'amplitude-experiment',
+        'https://cdn.amplitude.com/experiment-js-client/latest/experiment.min.js',
+        [],
+        null,
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'groundwrk_enqueue_assets');
