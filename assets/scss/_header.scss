@@ -19,6 +19,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 10px;
+    @media (min-width: 1279px){
+      padding: 12px 195px;
+    }
   }
 
   /* =========================
@@ -35,7 +38,7 @@
 
   &__logo {
     img {
-      width: 180px;
+      width: 152px;
       height: 37px;
       object-fit: contain;
     }
@@ -63,7 +66,7 @@
       }
 
       a {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
         color: var(--color-primary);
         padding: 6px 10px;
@@ -104,11 +107,11 @@
     }
 
     .search-field {
-      width: 204px;
+      width: 182px;
       height: 42px;
       padding: 0 10px 0 36px;
 
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       letter-spacing: 0.15px;
       line-height: 34px;
@@ -184,7 +187,7 @@
   .header-cta {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -199,9 +202,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 26px;
+    padding: 6px 23px;
 
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 
@@ -226,7 +229,7 @@
     border: 1px solid var(--color-primary);
 
     &:hover {
-      opacity: 0.9;
+    background: #005ae6;
     }
   }
 }
@@ -272,7 +275,7 @@
   box-sizing: border-box;
   background: #1f3545;
   z-index: 999;
-  padding: 20px 16px 24px;
+  padding: 20px 46px 24px;
   display: none;
   flex-direction: column;
   gap: 20px;
@@ -285,7 +288,7 @@
   /* mobile admin bar выше */
   @media (max-width: 782px) {
     .admin-bar & {
-      top: calc(70px + 46px);
+      top: calc(70px + 26px);
       height: calc(100vh - 116px - 46px);
     }
   }
@@ -339,12 +342,12 @@
     max-width: 360px;
     margin: 0 auto;
     li {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
 
     a {
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 400;
       color: var(--color-primary);
       text-decoration: none;
     }
@@ -356,7 +359,10 @@
     .mobile-cta {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+
+      li{
+        margin-bottom: 15px;
+      }
 
       li a {
         display: flex;
@@ -377,6 +383,9 @@
       }
     }
   }
+}
+.mobile-navigation{
+  margin-bottom: 43px !important;
 }
 
 .no-scroll {
@@ -505,7 +514,7 @@
   }
 
   .mobile-menu__container{
-    margin-top: 50px;
+    margin-top: 32px;
     width: 100%;
     max-width: 100%;
     flex: 1 1 auto;

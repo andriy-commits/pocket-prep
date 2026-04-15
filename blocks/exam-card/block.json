@@ -10,6 +10,7 @@
   "attributes": {
     "title": { "type": "string", "default": "" },
     "longname": { "type": "string", "default": "" },
-    "url": { "type": "string", "default": "" }
+    "url": { "type": "string", "default": "" },
+    "icon": { "type": "string", "default": "" }
   }
 }

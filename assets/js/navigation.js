@@ -87,19 +87,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-window.addEventListener('load', () => {
-  document.addEventListener('click', function (e) {
-    const toggle = e.target.closest('.exam__bundle-toggle');
-    if (!toggle) return;
-
-    const wrapper = toggle.closest('.bundle-container'); // ✅ FIX
-
-    const right = wrapper?.querySelector('.exam__bundle-right');
-
-    toggle.classList.toggle('show');
-    right?.classList.toggle('show');
-  });
-});
+// window.addEventListener('load', () => {
+//   document.addEventListener('click', function (e) {
+//     const toggle = e.target.closest('.exam__bundle-toggle');
+//     if (!toggle) return;
+//
+//     const wrapper = toggle.closest('.bundle-container'); // ✅ FIX
+//
+//     const right = wrapper?.querySelector('.exam__bundle-right');
+//
+//     toggle.classList.toggle('show');
+//     right?.classList.toggle('show');
+//   });
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -120,11 +120,75 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const el = document.querySelector('.left-image-hero');
+  const elements = document.querySelectorAll('.left-image-hero');
 
-  if (!el) return;
+  if (!elements.length) return;
 
   setTimeout(() => {
-    el.classList.add('is-visible');
+    elements.forEach(el => el.classList.add('is-visible'));
   }, 300);
+});
+
+//
+// document.addEventListener('DOMContentLoaded', function () {
+//   const toggleWrap = document.querySelector('.exam-bundle-toggle');
+//   const toggleBtn = document.querySelector('.exam-bundle-toggle .wp-block-button__link');
+//   const content = document.querySelector('.exam-bundle-content');
+//
+//   if (!toggleWrap || !toggleBtn || !content) return;
+//
+//   content.style.display = 'none';
+//
+//   toggleBtn.addEventListener('click', function (e) {
+//     e.preventDefault();
+//
+//     const isOpen = content.classList.contains('is-open');
+//
+//     if (isOpen) {
+//       content.style.display = 'none';
+//       content.classList.remove('is-open');
+//       toggleBtn.textContent = 'View other 8 EMS exams';
+//       toggleWrap.classList.remove('is-open');
+//     } else {
+//       content.style.display = 'block';
+//       content.classList.add('is-open');
+//       toggleBtn.textContent = 'Hide other 8 EMS exams';
+//       toggleWrap.classList.add('is-open');
+//     }
+//   });
+// });
+
+window.addEventListener('load', () => {
+  document.addEventListener('click', function (e) {
+    const toggle = e.target.closest('.exam__bundle-toggle');
+    if (!toggle) return;
+
+    e.preventDefault();
+
+    const wrapper = toggle.closest('.bundle-container');
+    const right = wrapper?.querySelector('.exam__bundle-right');
+    const btn = toggle.querySelector('.wp-block-button__link');
+
+    if (!right || !btn) return;
+
+    const isOpen = toggle.classList.contains('show');
+
+    toggle.classList.toggle('show', !isOpen);
+    right.classList.toggle('show', !isOpen);
+    right.hidden = isOpen;
+
+    btn.setAttribute('aria-expanded', String(!isOpen));
+
+    if (!right.id) {
+      right.id = 'exam-bundle-content-' + Math.random().toString(36).slice(2, 9);
+    }
+
+    btn.setAttribute('aria-controls', right.id);
+
+    if (!isOpen) {
+      btn.textContent = 'Hide other 8 EMS exams';
+    } else {
+      btn.textContent = 'View other 8 EMS exams';
+    }
+  });
 });

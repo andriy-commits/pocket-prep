@@ -46,10 +46,6 @@ if (!defined('ABSPATH')) {
                 ?>
             </nav>
 
-            <!-- SEARCH -->
-            <div class="head__search head__search-desktop">
-                <?php get_search_form(); ?>
-            </div>
 
         </div>
 
@@ -67,15 +63,6 @@ if (!defined('ABSPATH')) {
         </div>
 
         <button class="head__burger" aria-label="<?php esc_attr_e('Open menu', 'groundwrk'); ?>">
-            <svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title></title>
-                <g id="icon/icon-search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="search-icon-(editable)" stroke="#1671ff">
-                        <line x1="11.4696699" y1="9.71966991" x2="11.4696699" y2="15.2196699" id="Line-2" stroke-width="2.5" stroke-linecap="round" transform="translate(11.469670, 12.469670) rotate(-45.000000) translate(-11.469670, -12.469670) "></line>
-                        <circle id="Oval" stroke-width="2" cx="6" cy="6.5" r="5"></circle>
-                    </g>
-                </g>
-            </svg>
             <div style="display: flex;flex-direction: column; gap:4px;">
             <span></span>
             <span></span>
@@ -86,13 +73,10 @@ if (!defined('ABSPATH')) {
 
 </header>
 <div class="mobile-menu">
-    <div class="head__search-mobile head__search">
-        <?php get_search_form(); ?>
-    </div>
         <div class="mobile-menu__container">
     <?php
     wp_nav_menu([
-        'theme_location' => 'mobile-menu',
+        'theme_location' => 'primary',
         'menu_class'     => 'mobile-navigation',
         'container'      => false,
     ]);

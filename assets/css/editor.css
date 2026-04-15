@@ -56,3 +56,104 @@ body.block-editor-page {
   border-radius: 0px 0px 20px 20px;
 
 }
+.editor-styles-wrapper .half-pink {
+  position: relative;
+  z-index: 0;
+}
+
+.editor-styles-wrapper .half-pink:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: rgba(255, 99, 99, 0.08);
+  z-index: -1;
+}
+
+
+
+.editor-styles-wrapper .exam__subjects-weak {
+  position: absolute;
+  color: #30485a;
+  text-align: right;
+  width: 292px;
+  left: -305px;
+  bottom: -42px;
+  z-index: 2;
+}
+
+
+.editor-styles-wrapper .hero-container {
+  position: relative;
+}
+
+
+.editor-styles-wrapper .single-pp_exams {
+  position: relative;
+}
+
+.editor-styles-wrapper .single-pp_exams::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 10px;
+  width: 11px;
+  height: 7px;
+
+  background: url("../img/rectangle.svg") no-repeat center center;
+  background-size: contain;
+
+  transform: rotate(90deg);
+}
+
+.editor-styles-wrapper .heading-with-bg mark {
+  position: relative;
+  background: none;
+}
+
+.editor-styles-wrapper .heading-with-bg mark::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 113px;
+  height: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='113px' height='36px' viewBox='0 0 113 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FF6363' fill-opacity='0.16'%3E%3Cpath d='M4.23851576,0.750342635 L32.7840652,0.418697943 L41.6148497,0.66675425 L63.0625166,1.17781467 L68.2751186,1.36126245 C87.0767276,2.16867131 98.7551634,2.61216158 103.310426,2.69173324 C107.866335,2.77131621 111.424861,2.98910227 110.850593,5.86390852 C109.186163,14.1961076 110.696762,25.4813919 110.479482,27.1406675 C110.262202,28.7999431 110.926201,30.6644526 106.590113,32.3935381 C104.693129,33.1499913 89.002549,32.8452378 59.5183736,31.4792775 L47.9556506,30.9636109 L9.86558761,31.0391944 C5.0896187,31.0884169 3.75127939,33.2127365 3.13775454,24.8407459 C2.5242297,16.4687554 -4.16906838,0.689605754 4.23851576,0.750342635 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.editor-styles-wrapper .quote__icon:before{
+  z-index: -1;
+}
+.editor-styles-wrapper .quote__icon{
+  z-index: 20;
+}
+.editor-styles-wrapper .pricing__left-title mark{
+  position: relative;
+  background: none;
+  display: inline-block;
+  z-index: 1;
+}
+.editor-styles-wrapper .pricing__left-title mark::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 36px;
+  max-width: 246px;
+  background-image: url("data:image/svg+xml,%3Csvg%20preserveAspectRatio='none'%20width='196px'%20height='36px'%20viewBox='0%200%20196%2036'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3E%3Cg%20transform='translate(97.993679%2018.190370)%20rotate(-1.000000)%20translate(-97.993679%20-18.190370)%20translate(0.993679%200.690370)'%20fill='%23FFF2D9'%20fill-rule='nonzero'%3E%3Cpath%20d='M6.56775402%2C0.987318669%20L31.3664281%2C1.14465907%20L40.1972126%2C1.39271537%20L145.403585%2C2.74119093%20L150.616187%2C2.9246387%20C169.417796%2C3.73204757%20181.096232%2C4.17553783%20185.651495%2C4.25510949%20C190.207404%2C4.33469247%20193.76593%2C4.55247852%20193.191662%2C7.42728478%20C191.527232%2C15.7594838%20193.037831%2C27.0447681%20192.820551%2C28.7040437%20C192.603271%2C30.3633193%20193.26727%2C32.2278288%20188.931182%2C33.9569143%20C187.034198%2C34.7133675%20171.343618%2C34.408614%20141.859442%2C33.0426538%20C91.8473544%2C33.6061896%2060.2285511%2C33.8246362%2047.0030325%2C33.6979936%20C33.777514%2C33.571351%2020.5719342%2C32.5340864%207.38629321%2C30.5861997%20C2.61032431%2C30.6354222%201.27198499%2C32.7597418%200.658460143%2C24.3877513%20C0.044935298%2C16.0157607%20-1.83983012%2C0.926581787%206.56775402%2C0.987318669%20Z'%20transform='translate(96.646738%2017.674141)%20scale(-1%2C-1)%20translate(-96.646738%20-17.674141)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.editor-styles-wrapper .position-absolute-bottom-right{
+  display: flex;
+  justify-content: end;
+}

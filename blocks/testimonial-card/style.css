@@ -1,0 +1,189 @@
+.quote {
+    width: 472px;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    min-height: 472px;
+}
+
+/* ===== variants ===== */
+
+.quote.quote--red .quote__text {
+    color: #ff4d4f;
+}
+
+.quote.quote--red .quote__byline {
+    color: #ff4d4f;
+}
+
+.quote.quote--red .quote__byline::before {
+    background-color: rgba(255, 77, 79, 0.1);
+}
+
+.quote.quote--green .quote__text {
+    color: #2ecc71;
+}
+
+.quote.quote--green .quote__byline {
+    color: #27ae60;
+}
+
+.quote.quote--green .quote__byline::before {
+    background-color: rgba(46, 204, 113, 0.08);
+}
+
+.quote.quote--purple .quote__text,
+.quote.quote--blue .quote__text {
+    color: #6c5ce7;
+}
+
+.quote.quote--purple .quote__byline,
+.quote.quote--blue .quote__byline {
+    color: #6c5ce7;
+}
+
+.quote.quote--purple .quote__byline::before,
+.quote.quote--blue .quote__byline::before {
+    background-color: rgba(108, 92, 231, 0.08);
+}
+
+/* ===== frame ===== */
+
+.quote::before {
+    content: '';
+    width: calc(100% - 72px);
+    height: calc(100% - 82px);
+    position: absolute;
+    left: 33px;
+    top: 37.5px;
+    border: 3.5px solid #1671FF;
+}
+
+/* ===== icon ===== */
+
+.quote__icon {
+    width: 81px;
+    height: 51px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40.5px;
+    top: 19px;
+    z-index: 1;
+}
+.quote__icon:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgNzkgNDknIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PGRlZnM+PHBhdHRlcm4gaWQ9J2RvdHMnIHdpZHRoPSc2JyBoZWlnaHQ9JzYnIHBhdHRlcm5Vbml0cz0ndXNlclNwYWNlT25Vc2UnPjxjaXJjbGUgY3g9JzEnIGN5PScxJyByPScxJyBmaWxsPScjZmY0MDQzJy8+PC9wYXR0ZXJuPjwvZGVmcz48cGF0aCBkPSdNNjkuMSw3LjYyNSBDNzQuNTEyMzkwNSw3LjYyNSA3OC45LDEyLjAxMjYwOTUgNzguOSwxNy40MjUgTDc4LjksMzUuOCBDNzguOSw0My45ODcyNTA1IDcyLjkyMTY4ODcsNTAuMTY1NjkxNiA2NS40MjYwMDg2LDUwLjQ4Njg4MDkgTDY1LjQyNiwzNS44IEw1MC43MjUsMzUuOCBMNTAuNzI1LDcuNjI1IEw2OS4xLDcuNjI1IFogTTI2LjIyNSw3LjYyNSBDMzEuNjM3MzkwNSw3LjYyNSAzNi4wMjUsMTIuMDEyNjA5NSAzNi4wMjUsMTcuNDI1IEwzNi4wMjUsMzUuOCBDMzYuMDI1LDQzLjk4NzI1MDUgMzAuMDQ2Njg4Nyw1MC4xNjU2OTE2IDIyLjU1MTAwODYsNTAuNDg2ODgwOSBMMjIuNTUxLDM1LjggTDcuODUsMzUuOCBMNy44NSw3LjYyNSBMMjYuMjI1LDcuNjI1IFonIGZpbGw9InVybCgjZG90cykiIG9wYWNpdHk9IjAuOCIvPjwvc3ZnPg==");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quote__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== text ===== */
+
+.quote__text {
+    min-height: 472px;
+    font-size: 26px;
+    color: #333;
+    padding: 95px 83px 90px;
+    letter-spacing: 0.28px;
+    line-height: 43px;
+    font-family: 'Rooney Pro', sans-serif;
+    position: relative;
+    font-weight: 500;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* ===== byline ===== */
+
+.quote__byline {
+    z-index: 1;
+    width: 214px;
+    height: 40px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    margin-left: -107px;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    background: #ffffff;
+}
+
+.quote__byline::before {
+    content: '';
+    left: -19px;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    border-left: 19px solid #ffffff;
+    border-right: 19px solid #ffffff;
+}
+
+.quote__byline-mdash {
+    margin-left: 12px;
+}
+
+.quote__byline-exam {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-left: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+
+/* ===== responsive ===== */
+@media (max-width: 1239px) {
+    .quote__text {
+        font-size: 19px;
+        line-height: 34px;
+        padding: 74px 66px;
+        min-height: 375px;
+    }
+}
+@media (max-width: 768px) {
+    .quote {
+        width: 375px;
+        min-height: 375px;
+    }
+
+    .quote::before {
+        width: calc(100% - 62px);
+        height: calc(100% - 66px);
+        border-width: 2.5px;
+        left: 28.5px;
+        top: 30.5px;
+    }
+
+
+    .quote__byline {
+        font-size: 18px;
+        bottom: 12px;
+    }
+
+    .quote__byline-exam {
+        font-size: 12px;
+    }
+}
+@media (max-width: 385px) {
+    .quote {
+        max-width: 380px;
+        width: 100%;
+    }
+}

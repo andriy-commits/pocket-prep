@@ -1,0 +1,22 @@
+.editor-styles-wrapper .quote {
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.editor-styles-wrapper .quote__text {
+    font-size: 20px;
+}
+
+.quote__icon{
+    width: 81px;
+    height: 51px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40.5px;
+    top: 0;
+    z-index: 202;
+}
+
+.quote__icon:before{
+    z-index: -1;
+}

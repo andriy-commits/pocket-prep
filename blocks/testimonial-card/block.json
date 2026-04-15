@@ -1,0 +1,32 @@
+{
+    "apiVersion": 3,
+    "name": "groundwrk/testimonial-card",
+    "title": "Testimonial Card",
+    "category": "widgets",
+    "icon": "format-quote",
+    "editorScript": "file:./index.js",
+    "style": "file:./style.css",
+    "editorStyle": "file:./style.css",
+    "attributes": {
+        "text": {
+            "type": "string",
+            "default": ""
+        },
+        "name": {
+            "type": "string",
+            "default": ""
+        },
+        "exam": {
+            "type": "string",
+            "default": ""
+        },
+        "variant": {
+            "type": "string",
+            "default": "red"
+        },
+        "icon": {
+            "type": "string",
+            "default": ""
+        }
+    }
+}
